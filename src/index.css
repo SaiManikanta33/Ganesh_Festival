@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .font-heading {
+    font-family: 'Rozha One', 'Cinzel', serif;
+  }
+  .font-title {
+    font-family: 'Cinzel', serif;
+  }
+  .glass-card {
+    background: rgba(44, 44, 44, 0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1.5px solid rgba(255, 238, 0, 0.35);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.85);
+  }
+  .glass-card-gold {
+    background: linear-gradient(135deg, rgba(133, 57, 83, 0.9), rgba(44, 44, 44, 0.95));
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 238, 0, 0.5);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.9), inset 0 0 20px rgba(255, 238, 0, 0.2);
+  }
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #FFF566 0%, #FFEE00 40%, #FFC800 70%, #F3F4F4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text-saffron-gradient {
+    background: linear-gradient(135deg, #F3F4F4 0%, #FFEE00 50%, #853953 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #2C2C2C;
+}
+::-webkit-scrollbar-thumb {
+  background: #FFEE00;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #853953;
+}
